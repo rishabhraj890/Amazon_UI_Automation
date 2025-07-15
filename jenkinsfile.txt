@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/rishabhraj890/Amazon_UI_Automation', credentialsId: '6ff7487e-4016-42ef-9176-5a600c90029f'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+}
