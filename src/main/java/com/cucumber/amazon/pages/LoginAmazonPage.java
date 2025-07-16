@@ -33,7 +33,7 @@ public class LoginAmazonPage {
 	    driver.findElement(By.xpath("")).sendKeys("rishabh890@");
 	    driver.findElement(By.xpath("")).sendKeys("abc@123");
 	    
-	    driver.findElement(By.xpath("")).click();
+	    driver.findElement(By.xpath("submit")).click();
 	    
 	    System.out.println("success");
 	}
