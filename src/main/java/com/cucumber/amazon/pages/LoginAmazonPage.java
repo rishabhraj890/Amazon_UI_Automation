@@ -30,8 +30,10 @@ public class LoginAmazonPage {
 	    driver.findElement(By.xpath("//a[@id='nav_prefetch_yourorders']")).click();
 	    
 	    
-	    driver.findElement(By.xpath("rishabh890@")).sendKeys("");
+	    driver.findElement(By.xpath("")).sendKeys("rishabh890@");
 	    driver.findElement(By.xpath("")).sendKeys("abc@123");
+	    
+	    driver.findElement(By.xpath("")).click();
 	    
 	    System.out.println("success");
 	}
